@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workout</title>
+  <link rel="stylesheet" href="workout.css">
+  <style>.back-btn{position:fixed;top:1.5rem;left:1.5rem;color:#f4a7b9;font-size:18px;text-decoration:none;opacity:.5;transition:opacity .25s,text-shadow .25s;z-index:100;letter-spacing:1px;}.back-btn:hover{opacity:1;text-shadow:0 0 12px rgba(244,167,185,0.6);}</style>
+</head>
+<body>
+
+  <a href="main.html" class="back-btn">&#8592;</a>
+
+  <div class="workout-container">
+
+    <h2>SELFCARE</h2>
+    <p class="workout-subtitle">Reset.Refocus.Recharge</p>
+    <div class="divider"></div>
+
+    <div class="workout-grid">
+
+<div class="diet-section">
+        <h3>Diet Log</h3>
+
+        <div class="meal-block">
+          <p class="meal-label">Breakfast ideas</p>
+          <textarea id="diet-breakfast" placeholder="What did you eat?"></textarea>
+        </div>
+
+        <div class="meal-block">
+          <p class="meal-label">Lunch / Snacks ideas</p>
+          <textarea id="diet-lunch" placeholder="What did you eat?"></textarea>
+        </div>
+
+        <div class="meal-block">
+          <p class="meal-label">Dinner ideas</p>
+          <textarea id="diet-dinner" placeholder="What did you eat?"></textarea>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="days75-section">
+      <h3>75 Days</h3>
+      <div id="days75-grid"></div>
+      <p class="days75-count"><span id="days75-done">0</span> / 75</p>
+    </div>
+
+    <div class="selfcare-section">
+        <h3>SELFCARE ESSENTIALS</h3>
+        <textarea id="selfcare-notes" placeholder="What products do you need?"></textarea>
+    </div>
+
+  </div>
+
+  <script src="workout.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Planner</title>
+  <link rel="stylesheet" href="planner.css">
+  <style>.back-btn{position:fixed;top:1.5rem;left:1.5rem;color:#f4a7b9;font-size:18px;text-decoration:none;opacity:.5;transition:opacity .25s,text-shadow .25s;z-index:100;letter-spacing:1px;}.back-btn:hover{opacity:1;text-shadow:0 0 12px rgba(244,167,185,0.6);}</style>
+</head>
+<body>
+
+  <a href="main.html" class="back-btn">&#8592;</a>
+
+  <div class="planner-container">
+
+<h2>Planner</h2>
+<p class="planner-subtitle">Amani's Daily & Academic Space</p>
+<div class="divider"></div>
+
+    <div class="planner-grid">
+
+      <div class="tasks-section">
+        <h3>Today's Tasks</h3>
+        <div class="add-form">
+          <input type="text" id="task-input" placeholder="Add a task..." />
+          <button onclick="addTask()">+ Add</button>
+        </div>
+        <div id="task-list"></div>
+      </div>
+
+      <div class="assignments-section">
+        <h3>Assignments</h3>
+        <div class="add-form">
+          <input type="text" id="assign-input" placeholder="Assignment title..." />
+          <input type="date" id="assign-date" />
+          <button onclick="addAssignment()">+ Add</button>
+        </div>
+        <div id="assign-list"></div>
+      </div>
+
+    </div>
+
+    <div class="content-calendar-section">
+      <h3>Content Calendar</h3>
+      <div class="add-form">
+        <input type="text" id="content-idea" placeholder="Content idea..." />
+        <button onclick="addContent()">+ Add</button>
+      </div>
+      <div id="content-list"></div>
+    </div>
+
+  </div>
+
+  <script src="planner.js"></script>
+</body>
+</html>

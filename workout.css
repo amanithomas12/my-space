@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080810;
+    background-image: radial-gradient(ellipse at 50% 0%, rgba(244,167,185,0.07) 0%, transparent 65%);
+    font-family: Georgia, serif;
+    color: white;
+    min-height: 100vh;
+    padding: 3rem 2rem;
+}
+
+h2 {
+    font-size: 26px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 40px rgba(244,167,185,0.15);
+}
+
+.workout-subtitle {
+    font-size: 11px;
+    color: #f4a7b9;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    opacity: 0.6;
+}
+
+.divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #f4a7b966, transparent);
+    margin: 0 auto 2.5rem;
+}
+
+h3 {
+    font-size: 10px;
+    color: #f4a7b9;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+    opacity: 0.7;
+}
+
+.workout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.diet-section {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(244,167,185,0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    grid-column: 1 / -1;
+}
+
+/* Diet log */
+.meal-block {
+    margin-bottom: 1.25rem;
+}
+
+.meal-label {
+    font-size: 10px;
+    color: #f4a7b9;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+}
+
+textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #e8e8e8;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    resize: none;
+    outline: none;
+    height: 70px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea::placeholder { color: #333; }
+
+textarea:focus {
+    border-color: rgba(244,167,185,0.35);
+    box-shadow: 0 0 0 3px rgba(244,167,185,0.06);
+}
+
+/* 75 Days */
+.days75-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(244,167,185,0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+#days75-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.day75-box {
+    width: 26px;
+    height: 26px;
+    border: 1px solid rgba(244,167,185,0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+    flex-shrink: 0;
+}
+
+.day75-box:hover {
+    border-color: rgba(244,167,185,0.5);
+    background: rgba(244,167,185,0.05);
+}
+
+.day75-box.ticked {
+    background: rgba(244,167,185,0.2);
+    border-color: #f4a7b9;
+    box-shadow: 0 0 8px rgba(244,167,185,0.25);
+}
+
+.days75-count {
+    font-size: 11px;
+    color: #555;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+}
+
+.days75-count span {
+    color: #f4a7b9;
+}
+
+/* Selfcare */
+.selfcare-section {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(244,167,185,0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.selfcare-section textarea {
+    height: 90px;
+}

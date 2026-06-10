@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Future</title>
+  <link rel="stylesheet" href="future.css">
+  <style>.back-btn{position:fixed;top:1.5rem;left:1.5rem;color:#f4a7b9;font-size:18px;text-decoration:none;opacity:.5;transition:opacity .25s,text-shadow .25s;z-index:100;letter-spacing:1px;}.back-btn:hover{opacity:1;text-shadow:0 0 12px rgba(244,167,185,0.6);}</style>
+</head>
+<body>
+
+  <a href="main.html" class="back-btn">&#8592;</a>
+
+  <div class="future-container">
+
+<h2>FUTURE ME</h2>
+<p class="future-subtitle">UNIVERSITIES & INTERNSHIPS TRACKER</p>
+<div class="divider"></div>
+
+
+    <div class="future-grid">
+
+      <div class="universities-section">
+        <h3>Masters Applications</h3>
+        <div class="add-form">
+          <input type="text" id="uni-input" placeholder="University name..." />
+          <input type="text" id="uni-deadline" placeholder="Deadline..." />
+          <button onclick="addUni()">+ Add</button>
+        </div>
+        <div id="uni-list"></div>
+      </div>
+
+      <div class="internships-section">
+        <h3>Internship Applications</h3>
+        <div class="add-form">
+          <input type="text" id="intern-input" placeholder="Company name..." />
+          <input type="text" id="intern-deadline" placeholder="Deadline..." />
+          <button onclick="addIntern()">+ Add</button>
+        </div>
+        <div id="intern-list"></div>
+      </div>
+
+    </div>
+
+    <div class="projects-section">
+      <h3>Projects & Ideas</h3>
+      <div class="add-form">
+        <input type="text" id="project-input" placeholder="Project or idea name..." />
+        <textarea id="project-desc" placeholder="Describe it..."></textarea>
+        <button onclick="addProject()">+ Add</button>
+      </div>
+      <div id="project-list"></div>
+    </div>
+
+  </div>
+
+  <script src="future.js"></script>
+</body>
+</html>

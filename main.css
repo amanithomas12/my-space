@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080810;
+    background-image: radial-gradient(ellipse at 50% 0%, rgba(244,167,185,0.07) 0%, transparent 65%);
+    font-family: Georgia, serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dash-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.greeting {
+    font-size: 11px;
+    color: #f4a7b9;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0.75rem;
+    opacity: 0.7;
+}
+
+.dash-title {
+    font-size: 34px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.6rem;
+    text-shadow: 0 0 40px rgba(244,167,185,0.15);
+}
+
+.dash-quote {
+    font-size: 13px;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+}
+
+.divider {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #f4a7b966, transparent);
+    margin: 0 auto 3rem;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    max-width: 580px;
+}
+
+.nav-card {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(244,167,185,0.08);
+    border-radius: 16px;
+    padding: 1.75rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    transition: border-color 0.3s, background 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.nav-card:hover {
+    border-color: rgba(244,167,185,0.3);
+    background: rgba(244,167,185,0.04);
+    box-shadow: 0 4px 30px rgba(244,167,185,0.08);
+    transform: translateY(-2px);
+}
+
+.nav-label {
+    font-size: 10px;
+    color: #777;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-card:hover .nav-label {
+    color: #f4a7b9;
+}
+
+.nav-card i {
+    font-size: 22px;
+    color: #f4a7b9;
+    opacity: 0.7;
+    margin-bottom: 4px;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.nav-card:hover i {
+    opacity: 1;
+}

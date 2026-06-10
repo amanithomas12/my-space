@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes & Reads</title>
+  <link rel="stylesheet" href="library.css">
+  <style>.back-btn{position:fixed;top:1.5rem;left:1.5rem;color:#f4a7b9;font-size:18px;text-decoration:none;opacity:.5;transition:opacity .25s,text-shadow .25s;z-index:100;letter-spacing:1px;}.back-btn:hover{opacity:1;text-shadow:0 0 12px rgba(244,167,185,0.6);}</style>
+</head>
+<body>
+
+  <a href="main.html" class="back-btn">&#8592;</a>
+
+  <div style="text-align:center;margin-bottom:2.5rem;">
+    <h2>LIBRARY</h2>
+    <p class="library-subtitle">Books & Notes</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="library-container">
+    
+    <div class="books-section">
+      <h2>Books</h2>
+
+      <div class="currently-reading">
+        <h3>Currently Reading</h3>
+        <input type = "text" id= "reading-input" placeholder = "Add a book title..."/>
+        <button onclick="addBook('reading')">+ Add</button>
+        <div id="reading-list"></div>
+      </div>
+
+      <div class="have-read">
+        <h3>Have Read</h3>
+        <input type="text" id="read-input" placeholder="Add a book title..." />
+        <button onclick="addBook('read')">+ Add</button>
+        <div id="read-list"></div>
+      </div>
+
+      <div class="want-to-read">
+        <h3>Want to Read</h3>
+        <input type="text" id="want-input" placeholder="Add a book title..." />
+        <button onclick="addBook('want')">+ Add</button>
+        <div id="want-list"></div>
+      </div>
+    </div>
+
+    <div class="notes-section">
+    <h2>Notes</h2>
+
+    <div class="notion-link"> 
+    <h3>Notion</h3>
+    <a href="https://www.notion.so/SEMESTER-2-2f2e0cf489b180d78055c2638e5dca19" target="_blank" rel="noreferrer">SCHOOL NOTES</a>
+    </div>
+
+    </div>
+
+  </div>
+<script src="library.js"> </script>
+</body>
+</html>

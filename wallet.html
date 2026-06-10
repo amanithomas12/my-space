@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wallet</title>
+  <link rel="stylesheet" href="wallet.css">
+  <style>.back-btn{position:fixed;top:1.5rem;left:1.5rem;color:#f4a7b9;font-size:18px;text-decoration:none;opacity:.5;transition:opacity .25s,text-shadow .25s;z-index:100;letter-spacing:1px;}.back-btn:hover{opacity:1;text-shadow:0 0 12px rgba(244,167,185,0.6);}</style>
+</head>
+<body>
+
+  <a href="main.html" class="back-btn">&#8592;</a>
+
+  <div class="wallet-container">
+
+    <h2>WALLET</h2>
+    <p class="wallet-subtitle">Budget & Spending</p>
+    <div class="divider"></div>
+
+    <div class="wallet-grid">
+
+      <!-- SHOPPING LIST -->
+      <div class="shopping-section">
+        <h3>Shopping List</h3>
+        <div class="add-form">
+          <input type="text" id="shop-input" placeholder="Add an item..." />
+          <button onclick="addShopItem()">+ Add</button>
+        </div>
+        <div id="shop-list"></div>
+      </div>
+
+      <!-- SPENDING LOG -->
+      <div class="spending-section">
+        <h3>Spending Log</h3>
+        <div class="add-form">
+          <input type="text" id="spend-desc" placeholder="What did you spend on?" />
+          <input type="number" id="spend-amount" placeholder="Amount (RM)" min="0" step="0.01" />
+          <select id="spend-category">
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Beauty">Beauty</option>
+            <option value="Other">Other</option>
+          </select>
+          <button onclick="addSpend()">+ Add</button>
+        </div>
+        <div id="spend-list"></div>
+        <div class="spend-total">Total: RM <span id="spend-total-val">0.00</span></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="wallet.js"></script>
+</body>
+</html>
