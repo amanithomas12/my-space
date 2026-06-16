@@ -178,6 +178,30 @@ button:hover {
     border: 1px solid rgba(201,169,110,0.2);
 }
 
+/* Notes */
+.notes-section {
+    max-width: 900px;
+    margin: 2rem auto 0;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(244,167,185,0.08);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+.note-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    font-size: 13px;
+    color: #ccc;
+}
+
+.note-item:last-child { border-bottom: none; }
+
 /* Projects */
 .projects-section {
     max-width: 900px;
