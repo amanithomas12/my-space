@@ -273,3 +273,13 @@ select:focus {
 }
 
 select option { background: #111; }
+
+@media (max-width: 600px) {
+    body { padding: 2rem 1rem; }
+    h2 { font-size: 20px; letter-spacing: 5px; }
+    .planner-grid { grid-template-columns: 1fr; }
+    .tasks-section, .assignments-section { padding: 1.25rem; }
+    .content-calendar-section, .notes-section { padding: 1.25rem; }
+    .add-form { flex-direction: column; }
+    button { width: 100%; }
+}

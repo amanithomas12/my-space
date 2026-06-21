@@ -113,3 +113,9 @@ body {
 .nav-card:hover i {
     opacity: 1;
 }
+
+@media (max-width: 600px) {
+    .dash-title { font-size: 24px; letter-spacing: 6px; }
+    .nav-grid { grid-template-columns: repeat(2, 1fr); max-width: 100%; }
+    .nav-card { padding: 1.25rem 0.75rem; }
+}

@@ -208,3 +208,12 @@ button:hover {
 .spend-total span {
     color: #f4a7b9;
 }
+
+@media (max-width: 600px) {
+    body { padding: 2rem 1rem; }
+    h2 { font-size: 20px; letter-spacing: 5px; }
+    .wallet-grid { grid-template-columns: 1fr; }
+    .shopping-section, .spending-section { padding: 1.25rem; }
+    .add-form { flex-direction: column; }
+    button { width: 100%; }
+}

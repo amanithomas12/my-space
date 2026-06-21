@@ -124,3 +124,16 @@
 #chat-input-area button:hover {
     background: rgba(244,167,185,0.2);
 }
+
+@media (max-width: 600px) {
+    #chat-panel {
+        width: calc(100vw - 2rem);
+        right: 1rem;
+        bottom: 5rem;
+        height: 380px;
+    }
+    #chat-bubble {
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }
+}

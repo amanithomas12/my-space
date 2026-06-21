@@ -229,3 +229,12 @@ textarea:focus {
 .selfcare-section textarea {
     height: 90px;
 }
+
+@media (max-width: 600px) {
+    body { padding: 2rem 1rem; }
+    h2 { font-size: 20px; letter-spacing: 5px; }
+    .workout-grid { grid-template-columns: 1fr; }
+    .diet-section, .days75-section, .selfcare-section, .notes-section { padding: 1.25rem; }
+    #days75-grid { gap: 5px; }
+    .day75-box { width: 22px; height: 22px; }
+}
